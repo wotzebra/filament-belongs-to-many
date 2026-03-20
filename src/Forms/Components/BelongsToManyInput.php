@@ -9,6 +9,7 @@ use Filament\Support\Components\Attributes\ExposedLivewireMethod;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
+use Livewire\Component;
 
 class BelongsToManyInput extends Field
 {
@@ -174,7 +175,7 @@ class BelongsToManyInput extends Field
     #[ExposedLivewireMethod]
     public function fetchItems(): void
     {
-        /** @var \Livewire\Component&HasForms $livewire */
+        /** @var Component&HasForms $livewire */
         $livewire = $this->getLivewire();
 
         $livewire->dispatch(
