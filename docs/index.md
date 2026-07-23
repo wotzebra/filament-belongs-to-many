@@ -13,19 +13,10 @@ In an effort to align with Filament's theming methodology you will need to use a
 > **Note**
 > If you have not set up a custom theme and are using a Panel follow the instructions in the [Filament Docs](https://filamentphp.com/docs/3.x/panels/themes#creating-a-custom-theme) first. The following applies to both the Panels Package and the standalone Forms package.
 
-1. Import the plugin's stylesheet (if not already included) into your theme's css file.
+Import the plugin's stylesheet (if not already included) into your theme's css file.
 
 ```css
 @import '../../../../vendor/wotz/filament-belongs-to-many/resources/css/plugin.css';
-```
-
-2. Add the plugin's views to your `tailwind.config.js` file.
-
-```js
-content: [
-    ...
-    './vendor/wotz/filament-belongs-to-many/resources/**/*.blade.php',
-]
 ```
 
 ## Usage
